@@ -51,6 +51,7 @@ const commentDb = [
 function addPost (newPost) {
 	// console.log(db_thread);
   let status;
+  let obj = {}
 
 	for(let i = 0; i < threadDb.length; i++) {
 	  // console.log(threadDb[i].post);
@@ -60,42 +61,28 @@ function addPost (newPost) {
 	  let createdBy = threadDb[i].createdBy
 	  let date = threadDb[i].date
   
-	  // if (perTitle === '') {
-		// // return 'Tolong masukkan judul'
-		// console.log('Tolong masukkan judul');
-		
-	  // }
-  
-	  // if (perTitle.length < 5) {
-		// // return 'Judul teralu pendek'
-		// console.log('Judul terlalu pendek');
-	  // } 
-	  
-	  // if (perPost === '') {
-		// console.log('Isi curahan anda');
-	  // }
-  
-	  // db_thread.push()
     if (title === '' || title === undefined) {
       status = false
     } else {
       status = true
     }
+
+    if (status) {
+      obj = {
+        id,
+        title,
+        post,
+        createdBy,
+        date,
+        }
+    }
 	}
-  if (status) {
-    let obj = {
-      id,
-      title,
-      post,
-      createdBy,
-      date,
-      }
-  }
+  return obj
 }
   
   console.log(addPost(threadDb));
 // Read 
-function 
+
 // Update
 
 // Delete
