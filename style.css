@@ -12,12 +12,14 @@ body {
 }
 
 /* Navbar */
+
 nav {
   position: fixed;
   overflow: hidden;
   top: 0;
   width: 100%;
 }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -32,6 +34,7 @@ nav {
 .logo {
   font-size: 28px;
   margin-left: 20%;
+
   font-weight: bold;
 }
 
