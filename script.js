@@ -1,5 +1,5 @@
 // Thread DB
-const threadDb = [
+let threadDb = [
 	{
 		id: 1,
 		title: "What is Lorem Ipsum?", 
@@ -53,30 +53,23 @@ const commentDb = [
 
 // Update
 
-function updateThread(username, title, thread, newTitle, newThread) {
+function updateThread(id, database, newTitle, newThread) {
 	/// kalau misal button edit dipencet maka thread dan title akan bisa diubah sesuai dengan inputan dari text string yang baru
-	let validate = false
-	if (username === threadDb.createdBy) {
-		validate = true
-	}
 
-	if(validate === true) {
-		thread = newThread
-		title = newTitle
-	}
-
-	if(validate === false) {
-		return alert('g bs ganti') 
-	}
-	threadDb.status = 'edited'
-
-	return [title, thread]
+	let dataToEdit = database.find(cari => cari.id === id)
+	dataToEdit.title = newTitle
+	dataToEdit.post = newThread
+	dataToEdit.status = 'edited'
+	
+	return dataToEdit
 }
-
+console.log(updateThread(threadDb[3].id/*cari dinamisnya*/, threadDb, 'hayuuuuuk', 'hayoooook'))
+// let click = addEventListener('click',threadDb)
 // Delete
-function deleteThread(thread) {
+function deleteThread(thread, id) {
 	/// semisal selected thread di thread page maka thread tersebut akan hilang
-
+	database = thread.find(cari => cari.id === id)
+	id.addEventListener('click')
 }
 
 
