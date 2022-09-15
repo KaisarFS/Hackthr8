@@ -1,56 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <!-- Logo -->
-      <div class="logo"><a href="/">Hackthr8</a></div>
-      <ul class="nav-links">
-        <!-- Navigation Menu -->
-        <div class="menu">
-          <li class="user-menu">
-            <a href="/">User</a>
-            <!-- Dropdown -->
-            <ul class="dropdown">
-              <li><a href="/">Profile</a></li>
-              <li><a href="/">Sign Out</a></li>
-            </ul>
-          </li>
-        </div>
-      </ul>
-      </ul>
-    </nav>
-    <!-- End of Navbar -->
 
-    <!-- Content-->
-    <div class="container">
-      <h1>Topik Terkini</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <title>Document</title>
+</head>
 
-      <div class="thread">
-        <div class="thread-title">
-          <h2><a href=""></a>Thread Title</a></h2>
-        </div>
-          <div class="thread-description">
-              <p>Thread Description</p>
-          </div>
-          <div class="thread-info">
-            Thread by <a href="/">User</a>
-          </div>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo"><a href="/home.html">Hackthr8</a></div>
+    <ul class="nav-links">
+      <!-- Navigation Menu -->
+      <div class="menu">
+        <li class="user-menu">
+          <a href="/">User</a>
+          <!-- Dropdown -->
+          <ul class="dropdown">
+            <li id="nav-profile"><a href="/">Profile</a></li>
+            <li id="nav-sign-out"><a href="/">Sign Out</a></li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+    </ul>
+    </div>
+  </nav>
+  <!-- End of Navbar -->
+
+  <!-- Content-->
+  <div class="container">
+
+    <div class="row">
+      <div class="column">
+        <div class="heading">
+          <h1>Topik Terkini</h1>
         </div>
       </div>
+      <div class="column">
+        <button class="button create-thread" style="float:right">Buat Thread Baru</button>
+      </div>
     </div>
-  </body>
+
+
+    <div class="thread-card">
+      <div id='thread-title' class="thread-title">
+        <h2><a href="/detail-thread.html">Lorem ipsum dolor sit amet consectetur adipisicing elit?</a></h2>
+      </div>
+      <div id='thread-description' class="thread-description">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam consequatur nisi, animi tenetur sequi
+          architecto necessitatibus perferendis sint in cupiditate doloribus? Fuga dolore omnis quam vero explicabo
+          ipsam dicta facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam, pariatur
+          in cupiditate debitis perferendis rem possimus excepturi quod voluptas vero amet quos porro quisquam nam
+          tempora quae natus ex!</p>
+      </div>
+      <div id='thread-info' class="thread-info">
+        <p><a href="/">User</a> · Senin, 22-12-2022 · <a href="/" class='edit'>edit</a> · <a href="/"
+            class='delete'>delete</a></p>
+      </div>
+    </div>
+
+    <div class="thread-card">
+      <div id='thread-title' class="thread-title">
+        <h2><a href="/detail-thread.html">Lorem ipsum dolor sit amet consectetur adipisicing elit?</a></h2>
+      </div>
+      <div id='thread-description' class="thread-description">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam consequatur nisi, animi tenetur sequi
+          architecto necessitatibus perferendis sint in cupiditate doloribus? Fuga dolore omnis quam vero explicabo
+          ipsam dicta facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam, pariatur
+          in cupiditate debitis perferendis rem possimus excepturi quod voluptas vero amet quos porro quisquam nam
+          tempora quae natus ex!</p>
+      </div>
+      <div id='thread-info' class="thread-info">
+        <p><a href="/">User</a> · Senin, 22-12-2022 · <a href="/" class='edit'>edit</a> · <a href="/"
+            class='delete'>delete</a></p>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
 </html>
