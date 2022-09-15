@@ -53,7 +53,31 @@ const commentDb = [
 
 // Update
 
+function updateThread(username, title, thread, newTitle, newThread) {
+	/// kalau misal button edit dipencet maka thread dan title akan bisa diubah sesuai dengan inputan dari text string yang baru
+	let validate = false
+	if (username === threadDb.createdBy) {
+		validate = true
+	}
+
+	if(validate === true) {
+		thread = newThread
+		title = newTitle
+	}
+
+	if(validate === false) {
+		return alert('g bs ganti') 
+	}
+	threadDb.status = 'edited'
+
+	return [title, thread]
+}
+
 // Delete
+function deleteThread(thread) {
+	/// semisal selected thread di thread page maka thread tersebut akan hilang
+
+}
 
 
 
