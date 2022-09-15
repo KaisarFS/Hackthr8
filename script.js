@@ -63,15 +63,17 @@ function updateThread(id, database, newTitle, newThread) {
 	
 	return dataToEdit
 }
-console.log(updateThread(threadDb[3].id/*cari dinamisnya*/, threadDb, 'hayuuuuuk', 'hayoooook'))
+console.log(updateThread(threadDb[1].id/*cari dinamisnya*/, threadDb, 'hayuuuuuk', 'hayoooook'))
 // let click = addEventListener('click',threadDb)
 // Delete
-function deleteThread(thread, id) {
+function deleteThread(dataBase, id) {
 	/// semisal selected thread di thread page maka thread tersebut akan hilang
-	database = thread.find(cari => cari.id === id)
-	id.addEventListener('click')
+	let dataToDelete = dataBase.find(cari => cari.id === id)
+	dataToDelete = undefined
+	
+	return dataBase
 }
-
+console.log(deleteThread(threadDb, threadDb[2].id))
 
 
 
