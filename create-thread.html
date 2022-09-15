@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Buat Thread Baru</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo"><a href="/home.html">Hackthr8</a></div>
+        <ul class="nav-links">
+            <!-- Navigation Menu -->
+            <div class="menu">
+                <li id='nav-username' class="user-menu">
+                    <a href="/">User</a>
+                    <!-- Dropdown -->
+                    <ul class="dropdown">
+                        <li id="nav-profile"><a href="/">Profile</a></li>
+                        <li id="nav-sign-out"><a href="/">Sign Out</a></li>
+                    </ul>
+                </li>
+            </div>
+        </ul>
+        </ul>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+    <!-- Content-->
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="/home.html">Home</a></li>
+            <li>Buat Thread</li>
+        </ul>
+
+        <h1>Make a new thread</h1>
+        <form action="/thread" method="post">
+            <section>
+                <label for="title">title:</label>
+                <input type="text" placeholder="title" name="title">
+            </section>
+            <section>
+                <label for="thread">thread:</label>
+                <br>
+                <textarea name="thread" id="thread" cols="30" rows="5"></textarea>
+            </section>
+            <input type="submit">Submit</input>
+        </form>
+
+        <button><a href="/thread">Back to all thread</a></button>
+</body>
+
+</html>
