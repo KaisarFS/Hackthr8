@@ -1,0 +1,234 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f2f2;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #f16634;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.logo {
+  font-size: 28px;
+  margin-left: 400px;
+  font-weight: bold;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #f16634;
+}
+
+.nav-links {
+  margin-right: 400px;
+}
+
+.nav-links a {
+  color: #f16634;
+  font-weight: 500;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+.menu li {
+  list-style: none;
+  padding: 5px 14px;
+}
+
+.user-menu {
+  position: relative;
+}
+.dropdown {
+  background-color: #f8f8f8;
+  padding: 1em 0;
+  position: absolute;
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+.dropdown li + li {
+  margin-top: 10px;
+}
+.dropdown li {
+  /* padding: 0.5em 1em; */
+  width: 8em;
+  text-align: left;
+}
+/* .dropdown li:hover {
+  background-color: #4c9e9e;
+} */
+.user-menu:hover .dropdown {
+  display: block;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding-bottom: 21px;
+  padding-top: 64px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* End of Navbar */
+
+/* Content Thread Home*/
+.container {
+  width: 1075px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.heading {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.thread-card {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.thread-title {
+  padding: 21px 21px 0px 21px;
+}
+
+.thread-title h2 a {
+  text-decoration: none;
+  color: #232323;
+}
+
+.thread-description {
+  padding: 21px 21px 0px 21px;
+  color: #3b3b3b;
+}
+
+.thread-info {
+  padding: 21px 0px 21px 21px;
+}
+.thread-starter {
+  padding-top: 8px;
+}
+
+.detail-thread-card {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.detail-thread-title {
+  padding: 5px 21px 0px 21px;
+  font-size: 18px;
+}
+
+.detail-thread-description {
+  padding: 21px 21px 28px 21px;
+  color: #3b3b3b;
+}
+
+.detail-thread-info {
+  padding: 21px 0px 21px 21px;
+}
+.detail-thread-starter {
+  padding-top: 8px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.create-thread {
+  background-color: #f16634;
+  color: white;
+  /* border: 2px solid #f16634; */
+  border-radius: 8px;
+}
+
+.create-thread:hover {
+  background-color: #c03604;
+  color: white;
+}
+/* End of Content Thread */
+
+/* Comment */
+.comment-card {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-description {
+  padding: 8px 21px 21px 21px;
+  color: #3b3b3b;
+}
+
+.comment-info {
+  padding: 21px 0px 12px 21px;
+}
+/* End of Comment */
+
+/* Breadcrumb */
+ul.breadcrumb {
+  padding: 32px 0 21px 0;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 16px;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #f16634;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #f45015;
+  text-decoration: underline;
+}
+/* End of Breadcrumb */

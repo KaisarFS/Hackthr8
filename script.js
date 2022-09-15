@@ -64,6 +64,7 @@ console.log(threadDb);
 
 // Read 
 
+
 // Update
 function editThread(id, newTitle, newPost, database) {
 	let threadToEdit = database.find(thread => thread.id === id)
