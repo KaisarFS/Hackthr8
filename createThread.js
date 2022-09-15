@@ -26,7 +26,7 @@ function addPost (newPost) {
   // console.log(db_thread);
   for(let i = 0; i < db_thread.length; i++) {
     console.log(db_thread[i].post);
-    let perId = 
+    le
     let perTitle = db_thread[i].post
     let perPost = db_thread[i].post
 

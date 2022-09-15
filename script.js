@@ -49,40 +49,43 @@ const commentDb = [
 
 // Create
 function addPost (newPost) {
-	// console.log(db_thread);
-  let status;
-  let obj = {}
-
-	for(let i = 0; i < threadDb.length; i++) {
-	  // console.log(threadDb[i].post);
-	  let id = threadDb[i].id
-	  let title = threadDb[i].title
-	  let post = threadDb[i].post
-	  let createdBy = threadDb[i].createdBy
-	  let date = threadDb[i].date
-  
-    if (title === '' || title === undefined) {
-      status = false
-    } else {
-      status = true
-    }
-
-    if (status) {
-      obj = {
-        id,
-        title,
-        post,
-        createdBy,
-        date,
-        }
-    }
-	}
-  return obj
+	// console.log(newPost.length + 1);
+  let obj = {
+    id: newPost.length + 1,
+    title: 'Ini adalah judul baru',
+    post: 'Makanan ini terbuat dari buah pisang, sesudah di kupas kulitnya dipotong-potong sesuai keinginan kemudian di lumuri bersama adonan kental terbuat dari campuran tepung, sedikit garam dan gula, selanjutnya digoreng dalam minyak panas.',
+    createdBy: 'KaisarFS',
+    date: '05/10/2023'
+  }
+  newPost.push(obj)
+  return newPost
 }
   
   console.log(addPost(threadDb));
-// Read 
 
+  
+// Read 
+let btn = document.getElementById('btnSubmit')
+
+  let threadTitle = document.getElementsByClassName('thread-title')[0]
+  let threadDesc = document.getElementsByClassName('thread-description')[0]
+  let threadBy = document.getElementsByClassName('thread-info')[0]
+  let filteredThread = threadDb.filter(element => 4 === element.id)  
+  
+  // threadDesc.innerText = filteredThread[0].post
+  // threadTitle.innerText = filteredThread[0].title
+  // threadBy.innerText = filteredThread[0].createdBy 
+
+  let inputan = document.getElementById('fname')
+  // console.log(filteredThread[0].post);
+  btn.addEventListener('click',function() {
+  return alert(inputan.value);
+
+})
+// btn.addEventListener('click', read())
+
+
+// read();
 // Update
 
 // Delete
