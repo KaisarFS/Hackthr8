@@ -1,0 +1,108 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f2f2;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #f16634;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.logo {
+  font-size: 28px;
+  margin-left: 400px;
+  font-weight: bold;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #f16634;
+}
+
+.nav-links {
+  margin-right: 400px;
+}
+
+.nav-links a {
+  color: #f16634;
+  font-weight: 500;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+.menu li {
+  list-style: none;
+  padding: 5px 14px;
+}
+
+.user-menu {
+  position: relative;
+}
+.dropdown {
+  background-color: #f8f8f8;
+  padding: 1em 0;
+  position: absolute;
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+.dropdown li + li {
+  margin-top: 10px;
+}
+.dropdown li {
+  /* padding: 0.5em 1em; */
+  width: 8em;
+  text-align: center;
+}
+/* .dropdown li:hover {
+  background-color: #4c9e9e;
+} */
+.user-menu:hover .dropdown {
+  display: block;
+}
+
+/* End of Navbar */
+
+/* Content */
+.container {
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 32px;
+  width: 50%;
+}
+
+.thread {
+  width: 100%;
+  height: 400px;
+  background-color: #f8f8f8;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+}
+
+/*
+Color hexcode:
+Primary color: #F16634
+Secondary color #142848
+White color: #F8F8F8
+*/
