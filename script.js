@@ -1,5 +1,5 @@
 // Thread DB
-const threadDb = [
+let threadDb = [
 	{
 		id: 1,
 		title: "What is Lorem Ipsum?", 
@@ -48,13 +48,45 @@ const commentDb = [
 ]
 
 // Create
+function newThread(title, post, username, database) {
+	database.push({
+		id: (threadDb.length + 1),
+		title,
+		post,
+		createdBy: username,
+		date: (new Date()).toLocaleDateString("en-US")
+	})
+}
+
+newThread('pensil', 'pensil alat tulis', 'kasiarFS', threadDb)
+
+console.log(threadDb);
 
 // Read 
 
 // Update
+function editThread(id, newTitle, newPost, database) {
+	let threadToEdit = database.find(thread => thread.id === id)
+	threadToEdit.title = newTitle
+	threadToEdit.post = newPost
+}
+
+// editThread(1, 'miaw miaww', 'meongmmiawmeonggmiawwwmiawwww', threadDb)
+// console.log(threadDb);
 
 // Delete
+function deleteThread(id, database) {
+	// let threadToDelete = database.find(thread => thread.id === id)
+	// let idx = database.indexOf(threadToDelete)
+	// database.splice(idx, 1)
+	let thread = database.filter(thread => thread.id !== id)
+	database = thread
+	return database
+}
 
+// threadDb = deleteThread(1, threadDb)
+// deleteThread(1, threadDb)
+// console.log(threadDb);
 
 
 
