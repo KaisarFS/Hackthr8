@@ -24,7 +24,7 @@
             <!-- Navigation Menu -->
             <div class="menu">
                 <li id='nav-username' class="user-menu">
-                    <a href="/">User</a>
+                    <a href="/">Hello, Anonymous</a>
                     <!-- Dropdown -->
                     <ul class="dropdown">
                         <li id="nav-profile"><a href="/">Profile</a></li>
@@ -44,21 +44,24 @@
             <li>Buat Thread</li>
         </ul>
 
-        <h1>Make a new thread</h1>
-        <form action="/thread" method="post">
-            <section>
-                <label for="title">title:</label>
-                <input type="text" placeholder="title" name="title">
-            </section>
-            <section>
-                <label for="thread">thread:</label>
-                <br>
-                <textarea name="thread" id="thread" cols="30" rows="5"></textarea>
-            </section>
-            <input type="submit">Submit</input>
-        </form>
+        <div class="form-container">
+            <h1>Buat Thread Baru</h1>
+            <br>
+            <form action="/thread" method="post">
+                <section>
+                    <label for="new-title">Judul Thread:</label>
+                    <input type="text" placeholder="Masukkan Judul Thread" name="title">
+                </section>
+                <section>
+                    <label for="tambah-isi-thread">Isi Thread:</label>
+                    <br>
+                    <textarea name="create-isi-thread" id="create-isi-thread" placeholder="Masukkan Isi Thread"
+                        id="update-isi-thread" cols="30" rows="5"></textarea>
+                </section>
+                <input id='submit-create-thread' type="submit" style="float:right"></input>
+            </form>
+        </div>
 
-        <button><a href="/thread">Back to all thread</a></button>
 </body>
 
 </html>
