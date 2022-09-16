@@ -4,7 +4,7 @@
 
 
 body {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqB9YSrVi8VJEl5x0lhebAXWClkUcxJyIXVg&usqp=CAU);
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png);
     font-family: "Work Sans", sans-serif;
     font-size: 16px;
 }
@@ -13,10 +13,11 @@ body {
     width: 380px;
     border-radius: 25px;
     background-color: rgba(0,0,0,0,1);
-    box-shadow: 0 0 12px #333;
+    box-shadow: 0 0 20px #333;
     padding-top: 30px;
     margin-top: 100px;
     margin-left: 900px;
+    /* background-color: #142848; */
     background-color: #f0f0d8;
 }
 
@@ -30,6 +31,7 @@ body {
     text-align: center;
     padding-top: 75px;
     margin-bottom: 60px;
+    color: black;
 }
 
 .header h1{
@@ -53,7 +55,7 @@ body {
     font-size: 15px;
     color: #333;
     margin-bottom: 40px;
-    border-radius: 25px;
+    border-radius: 15px;
  }
 
 
@@ -76,9 +78,9 @@ body {
 } 
 
 .main button:hover {
-    box-shadow: 2px 2px 5px #555;
+    box-shadow: 2px 2px 20px black;
     background-color:#fff700 ;
-
+    cursor: pointer;
 } 
 
 
@@ -86,3 +88,16 @@ body {
 .main span {
     position: relative;
 }
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f8f8f8;
+    color: #494949;
+    border-top: 1px solid #e2e2e2;
+    width: 100%;
+    border-radius: 25px;
+  }
+  .text-center {
+    text-align: center;
+  }
