@@ -19,7 +19,7 @@
   <!-- Navbar -->
   <nav class="navbar">
     <!-- Logo -->
-    <div class="logo"><a href="/home.html">Hackthr8</a></div>
+    <div class="logo"><a href="/home.html"><img src="./images/hackthr8-logo.png" alt=""></a></div>
     <ul class="nav-links">
       <!-- Navigation Menu -->
       <div class="menu">
@@ -78,9 +78,24 @@
           nisi?</p>
       </div>
     </div>
-
+    <div class="form-container">
+      <h2>Berikan Tanggapan Anda</h2>
+      <br>
+      <form action="/thread" method="post" id="new-comment">
+        <section>
+          <textarea name="new-comment-text" placeholder="Masukkan tanggapan Anda" id="new-comment-text" cols="30"
+            rows="5"></textarea>
+        </section>
+        <input id='new-comment-input' type="submit" style="float:right" value="Kirim Tanggapan"></input>
+      </form>
+    </div>
 
   </div>
+
+  <footer>
+    <p class="text-center">&copy; 2022 Group 7</p>
+  </footer>
+
 </body>
 
 </html>
