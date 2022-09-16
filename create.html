@@ -8,19 +8,20 @@
 </head>
 <body>
     <h1>Make a new thread</h1>
-    <form action="/thread" method="post">
+    <form  onsubmit="newThread()"> <!-- method="post" action="/thread" -->
         <section>
             <label for="title">title:</label>
-            <input type="text" placeholder="title" name="title">
+            <input type="text" placeholder="title" name="title" id="inp_title">
         </section>
         <section>
             <label for="thread">thread:</label>
             <br>
-            <textarea name="thread" id="thread" cols="30" rows="5"></textarea>
+            <textarea name="thread" id="thread" cols="30" rows="5" id="inp_post"></textarea>
         </section>
         <input type="submit">Submit</input>
     </form>
 
     <button><a href="/thread">Back to all thread</a></button>
+    <script src="script.js"></script>
 </body>
 </html>
