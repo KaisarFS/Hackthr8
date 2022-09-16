@@ -99,7 +99,7 @@ function renderThread(database) {
           <p>${thread.post}</p>
         </div>
         <div id="thread-info" class="thread-info">
-          <p><a href="/">Anonymous</a> · ${thread.date} · <a href="/" id='edit-thread' class='edit'><i
+          <p><a href="/">Anonymous</a> · ${thread.date} · <a href="/edit-thread.html" id='edit-thread' class='edit'><i
 					class="fa-solid fa-pen-to-square"></i></a> <a href="/" id='delete-thread' class='delete'><i
 					class="fa-solid fa-trash"></i></a></p>
         </div>
